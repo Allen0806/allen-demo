@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.allen</groupId>
+		<artifactId>allen-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>allen-demo</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>allen-demo</name>
+	<description>Allen Project Demo</description>
+	<modules>
+		<module>allen-demo-client</module>
+		<module>allen-demo-core</module>
+		<module>allen-demo-server</module>
+	</modules>
+	<properties>
+		<allen-tools.version>1.0.0-SNAPSHOT</allen-tools.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.allen</groupId>
+			<artifactId>allen-tools</artifactId>
+			<version>${allen-tools.version}</version>
+		</dependency>
+	</dependencies>
+</project>

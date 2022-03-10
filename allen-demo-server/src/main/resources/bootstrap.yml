@@ -1,0 +1,67 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: "dev"
+    group:
+      "dev": "dev"
+      "test": "test"
+      "prod": "prod"
+  application:
+    name: lczq-demo
+
+---
+# 开发环境配置
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.75.77:8848
+      config:
+        server-addr: 192.168.75.77:8848
+        file-extension: yaml
+        group: lczq-demo
+        namespace: lczq-platform
+---
+# 测试环境配置
+spring:
+  config:
+    activate:
+      on-profile: "test"
+  cloud:
+    nacos:
+      discovery:
+        # 集群外地址
+        # server-addr: 10.90.70.11:38848
+        # 集群内地址
+        server-addr: nacos-0.nacos-headless.nacos:8848,nacos-1.nacos-headless.nacos:8848,nacos-2.nacos-headless.nacos:8848
+      config:
+        # 集群外地址
+        # server-addr: 10.90.70.11:38848
+        # 集群内地址
+        server-addr: nacos-0.nacos-headless.nacos:8848,nacos-1.nacos-headless.nacos:8848,nacos-2.nacos-headless.nacos:8848
+        file-extension: yaml
+        group: lczq-demo
+        namespace: lczq-platform
+
+
+---
+# 生产环境配置
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.60.112.34:81
+      config:
+        server-addr: 10.60.112.34:81
+        file-extension: yaml
+        group: lczq-demo
+        namespace: lczq-platform
+
