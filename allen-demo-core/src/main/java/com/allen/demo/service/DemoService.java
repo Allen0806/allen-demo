@@ -1,10 +1,10 @@
 package com.allen.demo.service;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-
 import com.allen.demo.model.DemoDTO;
 import org.springframework.validation.annotation.Validated;
+
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 /**
  * 处理服务层接口

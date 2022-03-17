@@ -2,8 +2,8 @@ package com.allen.demo.fallback;
 
 import com.allen.demo.feign.DemoClient;
 import com.allen.demo.model.DemoDTO;
-import com.lczq.tool.result.BaseResult;
-import com.lczq.tool.result.ResultStatus;
+import com.allen.tool.result.BaseResult;
+import com.allen.tool.result.ResultStatus;
 
 /**
  * Hystrix限流处理类，暂不使用

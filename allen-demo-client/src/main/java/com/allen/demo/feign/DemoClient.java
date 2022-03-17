@@ -1,12 +1,12 @@
 package com.allen.demo.feign;
 
 import com.allen.demo.fallback.DemoFallback;
+import com.allen.tool.result.BaseResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.allen.demo.model.DemoDTO;
-import com.lczq.tool.result.BaseResult;
 
 /**
  * Feign Client，供外部系统集成使用

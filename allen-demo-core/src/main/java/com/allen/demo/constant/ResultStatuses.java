@@ -1,6 +1,6 @@
 package com.allen.demo.constant;
 
-import com.lczq.tool.result.ResultStatus;
+import com.allen.tool.result.ResultStatus;
 
 /**
  * 系统状态码定义常量类

@@ -18,8 +18,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCaching
-@ComponentScan(basePackages = "com.lczq")
-@MapperScan(basePackages = "com.lczq.**.dao")
+@ComponentScan(basePackages = "com.allen")
+@MapperScan(basePackages = "com.allen.**.dao")
 public class DemoApplication {
 
 	public static void main(String[] args) {

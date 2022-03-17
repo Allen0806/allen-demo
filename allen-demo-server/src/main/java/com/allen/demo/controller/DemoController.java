@@ -2,8 +2,8 @@ package com.allen.demo.controller;
 
 import com.allen.demo.model.DemoDTO;
 import com.allen.demo.service.DemoService;
-import com.lczq.tool.result.BaseResult;
-import com.lczq.tool.validation.ValidationGroup;
+import com.allen.tool.result.BaseResult;
+import com.allen.tool.validation.ValidationGroup;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

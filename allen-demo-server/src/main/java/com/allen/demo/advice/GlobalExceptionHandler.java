@@ -6,6 +6,8 @@ import java.util.List;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 
+import com.allen.tool.exception.CustomBusinessException;
+import com.allen.tool.result.BaseResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.FieldError;
@@ -13,9 +15,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.lczq.tool.exception.CustomBusinessException;
-import com.lczq.tool.result.BaseResult;
 
 /**
  * Controller层异常通用处理类

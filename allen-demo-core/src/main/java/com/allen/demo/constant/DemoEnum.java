@@ -1,6 +1,7 @@
 package com.allen.demo.constant;
 
-import com.lczq.tool.string.StringUtil;
+
+import com.allen.tool.string.StringUtil;
 
 /**
  * 枚举类示例

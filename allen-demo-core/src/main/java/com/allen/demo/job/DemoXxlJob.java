@@ -1,13 +1,12 @@
 package com.allen.demo.job;
 
 import com.allen.demo.service.DemoService;
+import com.xxl.job.core.biz.model.ReturnT;
+import com.xxl.job.core.handler.annotation.XxlJob;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.xxl.job.core.biz.model.ReturnT;
-import com.xxl.job.core.handler.annotation.XxlJob;
 
 /**
  * 定时任务

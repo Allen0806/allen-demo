@@ -75,8 +75,8 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfo("接口文档", "网站：https://www.lczq.com，欢迎大家访问。", "API V1.0.0", "Terms of service",
-                new Contact("接口文档", "https://www.lczq.com", "service@lczq.com"), "Apache",
+        return new ApiInfo("接口文档", "网站：https://www.allen.com，欢迎大家访问。", "API V1.0.0", "Terms of service",
+                new Contact("接口文档", "https://www.allen.com", "service@allen.com"), "Apache",
                 "http://www.apache.org/", Collections.emptyList());
     }
 }

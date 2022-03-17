@@ -1,6 +1,6 @@
 package com.allen.demo.model;
 
-import com.lczq.tool.validation.ValidationGroup;
+import com.allen.tool.validation.ValidationGroup;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
